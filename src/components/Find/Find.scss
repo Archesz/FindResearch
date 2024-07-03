@@ -1,0 +1,60 @@
+.top-container{
+    width: 940px;
+    position: fixed;
+    top: 20px;
+    left: 90px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+
+    .find-research{
+        width: 940px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid #c3c3c3;
+        padding-left: 10px;
+
+    }
+
+    .filter-btns{
+        display: none;
+        margin-top: 10px;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        margin-left: 20px;
+
+        button{
+            height: 40px;
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #a6a2a2;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: -300px; /* Fora da tela inicialmente */
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    padding: 20px;
+}
+
+.menu.open {
+    right: 0; /* Traz o menu para a tela */
+}

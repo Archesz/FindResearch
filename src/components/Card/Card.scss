@@ -1,0 +1,147 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+    padding: 18px;
+    background-color: white;
+}
+
+.card-title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card-description-area{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card-infos{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 14px;
+}
+
+.info-field{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        .info-name{
+            font-size: 14px;
+
+            &:hover{
+                transition: .4s;
+                color: #de4545;
+                cursor: pointer;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+
+                &:hover{
+                    transition: .4s;
+                    color: #de4545;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+.card-label{
+    font-weight: bold;
+}
+
+.tag-row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.tag{
+    font-size: 12px;
+    padding: 8px;
+    border: 2px solid #FF6B00;
+    border-radius: 4px;
+    
+    &:hover{
+        transition: .3s;
+        background-color: #FF6B00;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.card-bottom{
+    margin-top: 16px;
+    border-top: 1px solid black;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn-card{
+        background-color: #FD7676;
+        font-weight: bolder;
+        color: white;
+        border: none;
+        font-size: 14px;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 6px 10px;
+        cursor: pointer;
+
+        &:hover{
+            transition: .4s;
+            background-color: #de4545;
+        }
+    }
+
+    .bottom-btns{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+
+        .icon-btn{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 14px;
+            border-radius: 4px;
+
+
+            cursor: pointer;
+
+            &:hover{
+                transition: .4s;
+                background-color: #3a3a3a;
+                color: white;
+            }
+        }
+    }
+}
